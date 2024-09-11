@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+      .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        font-size: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-[rgba(37,37,37,0.60)] w-full fixed top-0 z-10 px-4 lg:px-0">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between h-[80px]">
+          <h1>
+            <a class="font-bold text-2xl text-white" href="">LOGO</a>
+          </h1>
+          <div class="flex items-center gap-20">
+            <nav class="hidden lg:block">
+              <ul class="flex items-center gap-10">
+                <li>
+                  <a class="text-white" href="">Sales</a>
+                </li>
+                <li>
+                  <a class="text-white" href="">Categories</a>
+                </li>
+                <li>
+                  <a class="text-white" href="">Products</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-6">
+              <a href="">
+                <i data-lucide="search" class="text-white"></i>
+              </a>
+              <a href="">
+                <i data-lucide="user" class="text-white"></i>
+              </a>
+              <a href="">
+                <i data-lucide="shopping-cart" class="text-white"></i>
+              </a>
+              <a class="lg:hidden" href="">
+                <i data-lucide="menu" class="text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>  
+
+    <section class="h-screen w-full relative">
+      <div class="swiper mySwiperBanner h-screen">
+        <div class="swiper-wrapper h-screen">
+          <div class="swiper-slide h-screen">
+            <div class="relative after:content-[''] h-screen w-full after:absolute after:w-full after:top-0 after:bottom-0 after:bg-[#00000024]">
+              <img class="w-full h-full object-cover" src="./images/banner.jpg" alt="">
+            </div>
+            <div class="absolute bottom-[100px] px-4 lg:px-[calc((100vw-1024px)/2)] xl:px-[calc((100vw-1280px)/2)] 2xl:px-[calc((100vw-1536px)/2)]">
+              <h2 class="text-[40px] text-[#FFFFFF] leading-tight">The First Headphones <br> Built From Hemp</h2>
+              <button class="bg-[#3498DB] flex items-center justify-center w-[200px] h-[40px] mt-5">
+                <span class="text-white">Lear more</span>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide h-screen relative">
+            <div class="relative after:content-[''] h-screen w-full after:absolute after:w-full after:top-0 after:bottom-0 after:bg-[#00000024]">
+              <img class="w-full h-full object-cover" src="./images/banner2.jpg" alt="">
+            </div>
+            <div class="absolute bottom-[100px] px-4 lg:px-[calc((100vw-1024px)/2)] xl:px-[calc((100vw-1280px)/2)] 2xl:px-[calc((100vw-1536px)/2)]">
+              <h2 class="text-[40px] text-[#FFFFFF] leading-tight">The First Headphones <br> Built From Hemp</h2>
+              <button class="bg-[#3498DB] flex items-center justify-center w-[200px] h-[40px] mt-5">
+                <span class="text-white">Lear more</span>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide h-screen relative">
+            <div class="relative after:content-[''] h-screen w-full after:absolute after:w-full after:top-0 after:bottom-0 after:bg-[#00000024]">
+              <img class="w-full h-full object-cover" src="./images/banner.jpg" alt="">
+            </div>
+            <div class="absolute bottom-[100px] px-4 lg:px-[calc((100vw-1024px)/2)] xl:px-[calc((100vw-1280px)/2)] 2xl:px-[calc((100vw-1536px)/2)]">
+              <h2 class="text-[40px] text-[#FFFFFF] leading-tight">The First Headphones <br> Built From Hemp</h2>
+              <button class="bg-[#3498DB] flex items-center justify-center w-[200px] h-[40px] mt-5">
+                <span class="text-white">Lear more</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="h-[58px] absolute bottom-0 w-full z-10">
+          <div class="container mx-auto">
+            <div class="flex items-center justify-between border-t border-[#ffffff] h-[58px] z-10 relative">
+              <div class="swiper-button-prev relative top-auto right-auto left-auto m-0"></div>
+              <div class="swiper-button-next relative top-auto right-auto left-auto m-0"></div>
+            </div>
+            <div class="swiper-pagination h-[34px] text-[#ffffff] pointer-events-none"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-10 lg:pt-[113px]">
+      <div class="container mx-auto px-4 lg:px-0">
+        <h2 class="text-[#252525] text-2xl md:text-[40px] pb-5 md:pb-10 leading-tight">Explore New Arrivals</h2>
+      </div>
+      <div class="">
+        <div class="swiper mySwiper px-4 lg:px-[calc((100vw-1024px)/2)] xl:px-[calc((100vw-1280px)/2)] 2xl:px-[calc((100vw-1536px)/2)]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cursor-pointer">
+              <div class="bg-[#F0F0F0] w-full h-[350px] md:h-[552px] flex items-center justify-center">
+                <img class="w-full object-cover" src="./images/product-1.png" alt="">
+              </div>
+              <div class="pt-2">
+                <p class="text-[#252525] font-semibold">Iphone12 - 128gb</p>
+                <p class="text-[#696969]">$450</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <div class="bg-[#F0F0F0] w-full h-[350px] md:h-[552px] flex items-center justify-center">
+                <img class="w-full object-cover" src="./images/product-1.png" alt="">
+              </div>
+              <div class="pt-2">
+                <p class="text-[#252525] font-semibold">Iphone12 - 128gb</p>
+                <p class="text-[#696969]">$450</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <div class="bg-[#F0F0F0] w-full h-[350px] md:h-[552px] flex items-center justify-center">
+                <img class="w-full object-cover" src="./images/product-1.png" alt="">
+              </div>
+              <div class="pt-2">
+                <p class="text-[#252525] font-semibold">Iphone12 - 128gb</p>
+                <p class="text-[#696969]">$450</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <div class="bg-[#3498DB] w-full h-[350px] md:h-[552px] text-center flex items-center justify-center">
+                <p class="text-[40px] text-white font-bold leading-none">Show <br> more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto relative">
+        <div class="hidden lg:flex items-center justify-center">
+          <div class="w-[680px] h-[680px] bg-[#F7F7F7] rounded-full absolute top-[-200px]"></div>
+        </div>
+        <div class="flex items-center justify-center pt-20 lg:pt-[300px] pb-20 lg:pb-[200px] relative">
+          <div class="px-4 lg:px-0 lg:w-8/12 flex flex-col lg:flex-row items-center gap-5 lg:gap-20">
+            <img class="w-full object-cover hidden lg:block" src="./images/icon.svg" alt="">
+            <div class="flex items-start">
+              <img class="object-cover w-[60px]" src="./images/icon-cita.svg" alt="">
+              <p class="text-lg text-[#252525] pt-16">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-10 md:pb-[150px] lg:pl-[calc((100vw-1024px)/2)] xl:pl-[calc((100vw-1280px)/2)] 2xl:pl-[calc((100vw-1536px)/2)]">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="w-full px-4 lg:px-0">
+          <div class="pb-10 lg:pb-0 lg:w-8/12">
+            <h3 class="text-[30px] text-[#252525] mb-3">Apple Watch Serie 6</h3>
+            <p class="text-[#252525] text-lg">$250</p>
+            <p class="pt-10 text-[#252525] text-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+            <button class="border-2 border-[#3498DB] flex items-center justify-center w-[200px] h-[40px] mt-10">
+              <span class="text-[#3498DB]">Lear more</span>
+            </button>
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="swiper mySwiperTwo">
+            <div class="swiper-wrapper pl-4 lg:pl-0">
+              <div class="swiper-slide cursor-pointer w-[80%]">
+                <div class="bg-[#F0F0F0] w-full flex items-center justify-center">
+                  <img class="w-full object-cover" src="./images/product-4.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide cursor-pointer w-[80%]">
+                <div class="bg-[#F0F0F0] w-full flex items-center justify-center">
+                  <img class="w-full object-cover" src="./images/product-3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide cursor-pointer w-[80%]">
+                <div class="bg-[#F0F0F0] w-full flex items-center justify-center">
+                  <img class="w-full object-cover" src="./images/product-4.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="pb-20 md:pb-[150px] lg:pr-[calc((100vw-1024px)/2)] xl:pr-[calc((100vw-1280px)/2)] 2xl:pr-[calc((100vw-1536px)/2)]">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="w-full order-2 lg:order-0">
+          <div class="swiper mySwiperTwo">
+            <div class="swiper-wrapper pl-10 lg:pl-0">
+              <div class="swiper-slide cursor-pointer w-[80%]">
+                <div class="bg-[#F0F0F0] w-full flex items-center justify-center">
+                  <img class="w-full object-cover" src="./images/product-4.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide cursor-pointer w-[80%]">
+                <div class="bg-[#F0F0F0] w-full flex items-center justify-center">
+                  <img class="w-full object-cover" src="./images/product-3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide cursor-pointer w-[80%]">
+                <div class="bg-[#F0F0F0] w-full flex items-center justify-center">
+                  <img class="w-full object-cover" src="./images/product-4.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:pr-0 lg:pl-20 order-0 lg:order-2">
+          <div class="pb-10 lg:pb-0 lg:w-8/12">
+            <h3 class="text-[30px] text-[#252525] mb-3">Apple Watch Serie 6</h3>
+            <p class="text-[#252525] text-lg">$250</p>
+            <p class="pt-10 text-[#252525] text-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+            <button class="border-2 border-[#3498DB] flex items-center justify-center w-[200px] h-[40px] mt-10">
+              <span class="text-[#3498DB]">Lear more</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container mx-auto px-4 lg:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div class="w-full h-[532px] lg:h-[832px] relative">
+          <img class="w-full h-full object-cover" src="./images/product-5.jpg" alt="">
+          <div class="flex items-center justify-center flex-col absolute left-0 right-0 bottom-0 pb-10">
+            <p class="text-[#E5E5E5] text-[30px] mb-2">Products Apple</p>
+            <p class="text-[#E5E5E5] text-lg">Un salto al siguiente nivel</p>
+          </div>
+        </div>
+        <div class="w-full h-[532px] lg:h-[832px] relative">
+          <img class="w-full h-full object-cover" src="./images/product-6.jpg" alt="">
+          <div class="flex items-center justify-center flex-col absolute left-0 right-0 bottom-0 pb-10">
+            <p class="text-[#E5E5E5] text-[30px] mb-2">See Headphones</p>
+            <p class="text-[#E5E5E5] text-lg">A step forward in sonic reproduction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center pb-20">
+        <button class="border-2 border-[#3498DB] flex items-center justify-center w-[200px] h-[40px] mt-10">
+          <span class="text-[#3498DB]">See all products</span>
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-[#3C3B3B]">
+      <div class="container mx-auto pt-10 pb-20 px-4 lg:px-0">
+        
+          <div class="flex gap-10 flex-col lg:flex-row">
+            <div class="w-full">
+              <p class="pb-5 text-[#D2D2D2]">Newsletter Signup</p>
+              <div class="border w-full h-[53px] border-[#ffffff] flex items-center px-5 gap-2">
+                <input class="outline-none w-full text-[#ffffff] bg-transparent text-sm" type="text" placeholder="E- MAIL">
+                <button>
+                  <i data-lucide="move-right" class="text-white"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="pb-5 text-[#D2D2D2]">Shop</p>
+              <div class="flex flex-col gap-2">
+                <a href="" class="font-light text-[#ffffff]">New Arrivals</a>
+                <a href="" class="font-light text-[#ffffff]">Sales</a>
+                <a href="" class="font-light text-[#ffffff]">Products</a>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="pb-5 text-[#D2D2D2]">Orders & Support</p>
+              <div class="flex flex-col gap-2">
+                <a href="" class="font-light text-[#ffffff]">Shipping</a>
+                <a href="" class="font-light text-[#ffffff]">Privacy</a>
+                <a href="" class="font-light text-[#ffffff]">Terms</a>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="pb-5 text-[#D2D2D2]">FOLLOW</p>
+              <div class="flex items-center gap-4">
+                <a href="">
+                  <i data-lucide="instagram" class="text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+      
+      var swiper = new Swiper(".mySwiperBanner", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "1.2",
+        spaceBetween: 30,
+        breakpoints: {
+          1024: {
+            spaceBetween: 32,
+            slidesPerView: "3.2",
+          },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiperTwo", {
+        slidesPerView: "1.2",
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+          1024: {
+            spaceBetween: 32,
+            slidesPerView: "auto",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
